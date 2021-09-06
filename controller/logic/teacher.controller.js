@@ -76,7 +76,10 @@ exports.updateTeacher = (req, res, next) => {
             );
 
         }
+        console.log("Fuera:"+req.body.olddocumento);
         if(req.body.olddocumento){
+            console.log("Old Document:" + req.body.olddocumento)
+            let r = config.get("roles").teacher;
             let user = {
             name: teacher.name,
             lastname: teacher.lastname,
@@ -84,7 +87,7 @@ exports.updateTeacher = (req, res, next) => {
             password: helper.EncryptPassword(req.body.password),
             role: r
         };
-        userDto.update({documento: olddocumento}, user, (err, u) => {
+        userDto.update({documento: req.body.olddocumento}, user, (err, u) => {
             if(err){
 
                 return res.status(400).json(
