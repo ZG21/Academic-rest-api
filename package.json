@@ -1,0 +1,26 @@
+{
+  "name": "academic-api",
+  "version": "1.0.0",
+  "description": "academic api for students and teachers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "academic",
+    "rest-api",
+    "teacher",
+    "student"
+  ],
+  "author": "Marlon Herrera",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "crypto-js": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "mongoose-unique-validator": "^2.0.3",
+    "request-ip": "^2.1.3"
+  }
+}

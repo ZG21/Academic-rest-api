@@ -1,0 +1,18 @@
+{
+    "db-connections": {
+        "mongodb": {
+            "host": "cluster0.2sxls.mongodb.net",
+            "user": "UserProg3",
+            "password": "manizales2021",
+            "dbname": "AcademicDB"
+        }
+    },
+    "secretkeys": {
+        "cryptojs": "VjQqAvhU42"
+    },
+    "roles": {
+        "student": 1,
+        "teacher": 2
+    },
+    "server-port": 3000
+}
